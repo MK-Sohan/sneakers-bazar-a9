@@ -1,0 +1,19 @@
+.link-container {
+  background-color: royalblue;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.link-container a:hover {
+  color: orange;
+}
