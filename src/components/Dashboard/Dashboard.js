@@ -16,18 +16,14 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import Fodashboard from "../hooks/Fodashboard";
 
 const Dashboard = () => {
-  const [charts, setCharts] = useState([]);
-  useEffect(() => {
-    fetch("data.json")
-      .then((res) => res.json())
-      .then((data) => setCharts(data));
-  }, []);
+  const [charts, setCharts] = Fodashboard();
   console.log(charts);
   return (
     <div>
-      <div className="first">
+      <div className="first-chart">
         <BarChart width={900} height={800} data={charts}>
           <Bar dataKey="sell" fill="#8884d8" />
           <XAxis dataKey="month"></XAxis>
@@ -35,7 +31,7 @@ const Dashboard = () => {
           <Tooltip></Tooltip>
         </BarChart>
       </div>
-      <div className="second">
+      <div className="second-chart">
         <LineChart
           width={700}
           height={500}

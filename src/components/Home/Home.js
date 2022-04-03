@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import image from "../image/image.jpg";
 import Rating from "../hooks/Rating";
 import Reviews from "../Reviews/Reviews";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
-  const [reviews, setReviews] = Rating();
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("ratings.json")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
   console.log(reviews);
 
   const nav = useNavigate();
@@ -26,18 +31,10 @@ const Home = () => {
       </div>
       <div className="review-section">
         <h1>CUSTOMER REVIEWS:{reviews.length}</h1>
+
         <div className="review-container">
-          {reviews.map((review) => (
-            <div className="all-review">
-              <img src={review.image} alt="" />
-              <div className="review-detail">
-                <h5>Name:{review.name}</h5>
-                <p>
-                  Rating: <span className="rating-color">{review.rating}</span>{" "}
-                </p>
-                <p>Review:{review.review}</p>
-              </div>
-            </div>
+          {reviews?.map((review) => (
+            <Reviews review={review}></Reviews>
           ))}
         </div>
 

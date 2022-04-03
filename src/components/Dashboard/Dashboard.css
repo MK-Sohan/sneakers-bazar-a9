@@ -1,10 +1,10 @@
-.first {
+.first-chart {
   display: flex;
   justify-content: center;
   height: 900px;
   margin-top: 100px;
 }
-.second {
+.second-chart {
   display: flex;
   justify-content: center;
   height: 900px;
