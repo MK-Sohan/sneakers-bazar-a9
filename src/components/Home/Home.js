@@ -3,9 +3,16 @@ import "./Home.css";
 import image from "../image/image.jpg";
 import Rating from "../hooks/Rating";
 import Reviews from "../Reviews/Reviews";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [reviews, setReviews] = Rating();
   console.log(reviews);
+
+  const nav = useNavigate();
+  const goreviewpage = () => {
+    nav("/goreview");
+  };
+
   return (
     <div className="home-container">
       <div className="leftside">
@@ -18,11 +25,25 @@ const Home = () => {
         <img src={image} alt="" />
       </div>
       <div className="review-section">
-        {reviews?.map((review) => (
-          <Reviews review={review}></Reviews>
-        ))}
-        <h1>CUSTOMER REVIEWS:</h1>
-        <button className="btn">SEE ALLL REVIEWS...</button>
+        <h1>CUSTOMER REVIEWS:{reviews.length}</h1>
+        <div className="review-container">
+          {reviews.map((review) => (
+            <div className="all-review">
+              <img src={review.image} alt="" />
+              <div className="review-detail">
+                <h5>Name:{review.name}</h5>
+                <p>
+                  Rating: <span className="rating-color">{review.rating}</span>{" "}
+                </p>
+                <p>Review:{review.review}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <button onClick={goreviewpage} className="btn">
+          SEE ALLL REVIEWS...
+        </button>
       </div>
     </div>
   );

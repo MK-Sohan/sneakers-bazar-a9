@@ -1,12 +1,10 @@
 import React from "react";
 
-const Reviews = (props) => {
-  //   const { rating } = review;
-  console.log(props.review.rating);
+const Reviews = () => {
   return (
     <div>
-      {/* <h1>this is review section:{props.review.rating}</h1> */}
-      {/* <img src={props.review.image} alt="" /> */}
+      <h1>this is review section</h1>
+      <h1>more review</h1>
     </div>
   );
 };

@@ -32,9 +32,38 @@
   width: 408px;
   font-size: 25px;
   font-weight: 700;
-  margin-top: 500px;
+  margin-top: 200px;
 }
 .btn:hover {
   background-color: royalblue;
   color: white;
+}
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+
+.all-review img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid orange;
+}
+.all-review {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(128, 167, 185);
+}
+
+.review-detail {
+  margin-left: 20px;
+  width: 100%;
+}
+.rating-color {
+  color: orange;
 }
