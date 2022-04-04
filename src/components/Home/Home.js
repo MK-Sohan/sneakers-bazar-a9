@@ -35,7 +35,7 @@ const Home = () => {
         <h1>CUSTOMER REVIEWS:{reviews.length}</h1>
 
         <div className="review-container">
-          {reviews.map((review) => (
+          {reviews.slice(0, 3).map((review) => (
             <Singlereview review={review}></Singlereview>
           ))}
         </div>
