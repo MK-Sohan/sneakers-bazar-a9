@@ -1,6 +1,6 @@
 Sneakers Bazar
 
-Live website link:(https://github.com/facebook/create-react-app).
+Live website link:(https://meek-malasada-70b6de.netlify.app/).
 
 <li>
 In home page there is some info about Air jordan legacy and some review.
