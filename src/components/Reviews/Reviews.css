@@ -5,13 +5,17 @@
   border: 2px solid orange;
 }
 .all-review {
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 15px gray;
+  border-radius: 10px;
   display: flex;
+
   align-items: center;
+  justify-content: center;
 
   margin: auto;
   width: 90%;
-  height: 90%;
-  background-color: rgb(128, 167, 185);
+  height: 100%;
 }
 
 .review-detail {
@@ -20,4 +24,7 @@
 }
 .rating-color {
   color: orange;
+}
+.review-container {
+  margin-top: 60px;
 }

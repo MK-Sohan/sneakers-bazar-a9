@@ -23,7 +23,12 @@ const Home = () => {
           <span className="second">
             <h1>FOR YOUR FEET</h1>
           </span>
+          <p>
+            The Jordan Legacy 312 is a new Jordan shoe designed in collaboration
+            with Don C. It first released in the Summer of 2018.
+          </p>
         </div>
+
         <img src={image} alt="" />
       </div>
       <div className="review-section">
@@ -33,18 +38,6 @@ const Home = () => {
           {reviews.map((review) => (
             <Singlereview review={review}></Singlereview>
           ))}
-          {/* {reviews.map((review) => (
-            <div className="all-review">
-              <img src={review.image} alt="" />
-              <div className="review-detail">
-                <h5>Name:{review.name}</h5>
-                <p>
-                  Rating: <span className="rating-color">{review.rating}</span>
-                </p>
-                <p>Review:{review.review}</p>
-              </div>
-            </div>
-          ))} */}
         </div>
 
         <button onClick={goreviewpage} className="btn">

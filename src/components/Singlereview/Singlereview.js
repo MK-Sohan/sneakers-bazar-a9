@@ -1,7 +1,7 @@
 import React from "react";
 import "./Singlereview.css";
 const Singlereview = (props) => {
-  console.log(props.review);
+  //   console.log(props.review);
   const { rating, image, name, review } = props.review;
   return (
     <div className="review-container">
