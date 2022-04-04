@@ -8,12 +8,12 @@ const Blogs = () => {
         <h2> What is Context API?</h2>
         <h4>
           {" "}
-          Ans: In React if we want to use a data frop upper conponent we have to
-          send the data as a props through other components ,this is called
-          props drilling. <br /> In this case we need to send the data through
-          those components who dosen't need the data .To solve this prop
-          drilling problem we need to use Context API. <br /> Context API is a
-          React structure that help to exchange details and solving
+          Ans: In React if we want to use a data from upper conponent we have to
+          send the data to the destination as a props through other components
+          ,this is called props drilling. <br /> In this case we need to send
+          the data through those components who dosen't need the data .To solve
+          this props drilling problem we need to use Context API. <br /> Context
+          API is a React structure that helps to exchange details and solving
           prop-drilling from all levels of our application.
         </h4>{" "}
         <br />
