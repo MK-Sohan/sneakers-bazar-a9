@@ -1,20 +1,21 @@
-.all-review img {
+.single-review img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   border: 2px solid orange;
 }
-.all-review {
+.single-review {
   display: flex;
   align-items: center;
 
   margin: auto;
-  width: 90%;
+  width: 600px;
   height: 90%;
+
   background-color: rgb(128, 167, 185);
 }
 
-.review-detail {
+.single-detail {
   margin-left: 20px;
   width: 100%;
 }

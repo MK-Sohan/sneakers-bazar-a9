@@ -1,5 +1,6 @@
 import React from "react";
 import Rating from "../hooks/Rating";
+import "./Reviews.css";
 
 const Reviews = () => {
   const [reviews, setReviews] = Rating();

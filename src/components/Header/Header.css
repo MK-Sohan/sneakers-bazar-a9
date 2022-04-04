@@ -13,6 +13,7 @@
   margin-left: 20px;
   font-weight: 700;
   font-size: 25px;
+  font-family: "Nunito", sans-serif;
 }
 .link-container a:hover {
   color: orange;
