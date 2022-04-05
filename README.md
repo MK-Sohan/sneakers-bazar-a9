@@ -1,6 +1,6 @@
 Sneakers Bazar
 
-Live website link:(https://meek-malasada-70b6de.netlify.app/).
+Live website link:(https://app.netlify.com/sites/meek-malasada-70b6de/overview).
 
 <li>
 In home page there is some info about Air jordan legacy and some reviews.
